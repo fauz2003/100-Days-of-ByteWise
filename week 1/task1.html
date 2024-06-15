@@ -2,57 +2,74 @@
 <html>
     <head>
         <title>Task 1</title>
+        <link rel="stylesheet" href="../week 1/task.css">
     </head>
     <body>
-        <div>
+        <div class="navbar">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Contact Me</a></li>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#contact"><li>Contact Me</li></a>
             </ul>
         </div>
-        <div>
+        <div id="home">
             <img src="../week 1/1717954874136.jpg/">
             <h1>Welcome to my Personal Portfolio Website</h1>
-            <div>
-                <button><a href="https://www.linkedin.com/in/fauz-ahmed/">Linkedin</a></button>
-                <button><a href="https://github.com/fauz2003">GitHub</a></button>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/fauz-ahmed/"><button>Linkedin</button></a>
+                <a href="https://github.com/fauz2003"><button>GitHub</button></a>
             </div>
         </div>
-        <div>
+        <div id="about">
             <h2>About Me</h2>
             <p>
-                My name is Fauz Ahmed. I am a Computer Science student entering my final year at FAST 
-                university. I have a strong passion towards full stack development, particularly MERN stack.
+                I am a Computer Science student pursuing my Bachelor's degree from FAST University, Islamabad, with a strong passion for leveraging programming to solve real-world problems. 
+
+My interest lies in full-stack development, with a specific focus on MERN stack development, where I specialize in constructing responsive and user-friendly web applications. I am dedicated to advance my abilities in this field, with an attempt to constantly gain knowledge through various courses and certifications.    
             </p>
-            <p>
-                <h4>Skills:</h4>
-                <p>MERN, C/C++, Python, Java, Linux, Git/GitHub</p>
-            </p>
+            <div id="skills">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
         </div>
-        <div>
+        <div id="projects">
             <h2>Projects</h2>
             <ul>
                 <li><a>Project 1</a></li>
                 <li><a>Project 2</a></li>
                 <li><a>Project 3</a></li>
                 <li><a>Project 4</a></li>
+                <li><a>Project 5</a></li>
+                <li><a>Project 6</a></li>
             </ul>
         </div>
-        <div>
+        <div id="contact">
             <h2>Contact Me</h2>
             <form>
-                <label>Name:</label>
-                <input type="text" placeholder="enter your name"/>
-                <br/><br/>
-                <label>Email:</label>
-                <input type="text" placeholder="enter your email"/>
-                <br/><br/>
-                <label>Message:</label>
-                <input type="textarea" placeholder="enter your message"/>
-                <br/><br/>
-                <button>Submit</button>
+                <div class="entries">
+                    <div class="entry">
+                        <label>Name:</label>
+                        <input type="text" placeholder="enter your name"/>
+                    </div>
+                    <div class="entry">
+                        <label>Email:</label>
+                    <input type="text" placeholder="enter your email"/>
+                    </div>
+                    <div class="entry">
+                        <label>Message:</label>
+                    <input type="textarea" placeholder="enter your message"/>    
+                    </div>
+                    <button>Submit</button>
+                </div>
             </form>
         </div>
     </body>

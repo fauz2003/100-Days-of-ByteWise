@@ -1,0 +1,195 @@
+body{
+    background:linear-gradient(to bottom, beige, lightblue 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    list-style-type: none;
+    font-weight: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-size: 28px;
+}
+.navbar li{
+    padding: 15px 35px 15px 35px;
+    border-radius: 50%;
+    background-color:rgb(26, 116, 146);
+    border: 2px solid beige;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar li:hover{
+    transform: scale(1.05);
+    background-color: beige;
+    border: 2px solid rgb(26, 116, 146);
+    color: rgb(26, 116, 146);
+    transition: 0.3s;
+}
+#home img{
+    margin-top: -30px;
+    width:300px;
+    border-radius: 20%;
+    border:2px solid beige;
+    transition: 0.3s;
+    margin-left: 400px;
+}
+#home img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    border-color: rgb(26, 116, 146);
+}
+
+#home h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(26, 116, 146);
+    font-weight: 800;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: center;
+}
+.buttons button{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 40px;
+    border-radius: 20%;
+    background-color: rgb(26, 116, 146);
+    border: 2px solid beige;
+    box-shadow: none;
+    transition: 0.3s;
+    color: beige;
+    cursor: pointer;
+}
+.buttons button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: beige;
+    border-color: rgb(26, 116, 146);
+    color: rgb(26, 116, 146);
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: beige;
+    width: 100%;
+    color: rgb(26, 116, 146);
+}
+body h2{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#about p{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+
+#skills ul, #projects ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 28px;
+    font-weight: 600;
+    border: 4px solid ;
+    border-radius: 10%;
+    padding: 30px 40px;
+}
+#skills li:hover, #projects li:hover{
+    color: blueviolet;
+    transition: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#projects {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    text-shadow:
+        -1px -1px 0 rgb(26, 116, 146),
+        1px -1px 0 rgb(26, 116, 146),
+        -1px 1px 0 rgb(26, 116, 146),
+        1px 1px 0 rgb(26, 116, 146);
+}
+#projects h2{
+    font-size: 60px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: beige;
+    width: 100%;
+    color: rgb(26, 116, 146);
+    padding-bottom: 50px;
+    margin-bottom: -20%;
+}
+#contact h2{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact label{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.entries{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.entry{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: left;
+}
+.entries button{
+    max-width: 100px;
+    align-self:self-end;
+}
+
+body a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 600;
+}
+body a:hover{
+    color: rgb(26, 116, 146);
+}
+
