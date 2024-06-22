@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Design</title>
+        <style>
+            body{
+                background-color:burlywood;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            h1{
+                color: palevioletred;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 2px solid black;
+                background:linear-gradient(to right, white, plum);
+                width: 60%;
+                align-self: center;
+            }
+            .box{
+                border: 2px solid whitesmoke;
+                padding: 10px;
+                background-color: aquamarine;
+                margin: 1rem;
+                display: inline block;
+                width: 400px;
+            }
+            .box-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            @media (max-width: 800px){
+                .box-container{
+                    flex-wrap: wrap;
+                }
+                .box{
+                    flex-basis: 400px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Responsive Design Example Task</h1>
+        <div class="box-container">
+            <div class="box">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id accusantium architecto corporis, deleniti temporibus! Praesentium provident reprehenderit illo dolor inventore assumenda ad perspiciatis maxime. Exercitationem ratione eos nostrum beatae.</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+            <div class="box" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquid repellendus quisquam deleniti voluptatem delectus amet corporis deserunt. Similique, nisi. Atque explicabo consectetur sequi ab numquam? Corporis incidunt corrupti sequi!</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+        </div>
+    </body>
+</html>
