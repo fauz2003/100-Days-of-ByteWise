@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            body{
+                background-color:burlywood;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 1.5rem;
+                margin: 3rem 10rem;
+
+            }
+            .grid{
+                border: 2px solid whitesmoke;
+                padding: 10px;
+                background-color: aquamarine;
+            }
+            .grid-span-2{
+                grid-column: span 2;
+            }
+            .grid-row-2{
+                grid-row: span 2;
+            }
+            .grid2{
+                grid-column: 1;
+                grid-row: 2;
+                background-color: goldenrod;
+            }
+            .grid1{
+                background-color: beige;
+            }
+            .grid3{
+                background-color: darkseagreen;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row: 2;
+            }
+            .grid4{
+                background-color: darksalmon;
+            }
+            .grid5{
+                background-color: darkturquoise;
+            }
+            h1{
+                color: palevioletred;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 2px solid black;
+                background:linear-gradient(to right, white, plum);
+                width: 60%;
+                align-self: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Example Task</h1>
+        <div class="grid-container">
+            <div class="grid grid1 grid-span-2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id accusantium architecto corporis, deleniti temporibus! Praesentium provident reprehenderit illo dolor inventore assumenda ad perspiciatis maxime. Exercitationem ratione eos nostrum beatae.</p>
+            </div>
+            <div class="grid grid2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+            <div class="grid grid3 grid-span-2" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquid repellendus quisquam deleniti voluptatem delectus amet corporis deserunt. Similique, nisi. Atque explicabo consectetur sequi ab numquam? Corporis incidunt corrupti sequi!</p>
+            </div>
+            <div class="grid grid4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+            <div class="grid grid5 grid-row-2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veritatis dignissimos ab vero? Nemo placeat accusamus qui magnam sit modi nobis ipsam ipsum quisquam? Dolorum est quaerat ab odio obcaecati?</p>
+            </div>
+        </div>
+    </body>
+</html>

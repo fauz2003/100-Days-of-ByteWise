@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            body{
+                background-color:burlywood;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            h1{
+                color: palevioletred;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 2px solid black;
+                background:linear-gradient(to right, white, plum);
+                width: 60%;
+                align-self: center;
+            }
+            .flexbox-container{
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .flex{
+                border: 2px solid whitesmoke;
+                padding: 10px;
+                flex:1 0 200px;
+                color: brown;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox Example Task</h1>
+        <div class="flexbox-container">
+            <div class="flex">1</div>
+            <div class="flex">2</div>
+            <div class="flex">3</div>
+            <div class="flex">4</div>
+            <div class="flex">5</div>
+            <div class="flex">6</div>
+            <div class="flex">7</div>
+            <div class="flex">8</div>
+        </div>
+    </body>
+</html>
