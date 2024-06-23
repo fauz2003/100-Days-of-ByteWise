@@ -17,8 +17,8 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |1            | 1           | Basics of HTML                               | Done              |
 |             | 2           | CSS Basics and best styling practices        | Done              |
 |             | 3           | CSS Properties                               | Done              |
-|1            | 4           | Git and GitHub Basics                        | Done              |
+|             | 4           | Git and GitHub Basics                        | Done              |
 |2            | 1           | Mastering CSS Grid and Flexbox               | Done              |
-|2            | 2           | Creating a responsive website                | Done              |
-|2            | 3           | Practice Challenge                           | Done              |
+|             | 2           | Creating a responsive website                | Done              |
+|             | 3           | Practice Challenge                           | Done              |
 
