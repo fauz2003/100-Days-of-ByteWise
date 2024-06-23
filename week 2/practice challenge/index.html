@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Challenge</title>
+  <style>
+    @font-face {
+      font-family: 'MyCustomFont';
+      src: url('assets\fonts\Figtree-VariableFont_wght.ttf') format('truetype');
+    }
+
+    body{
+      background: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .main{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+    }
+    .card{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      background-color: whitesmoke;
+      padding: 1rem;
+      width: min-content;
+      border-radius: 3%;
+      border: 1px solid black;
+      scale: 0.8;
+      margin-top: 0px;
+    }
+    .shadow{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      background-color: rgb(6, 5, 5);
+      padding: 1rem;
+      width: min-content;
+      border-radius: 3%;
+      border: 1px solid black;
+      scale: 0.8;
+      margin-top: 8px;
+      margin-left: 12px;
+      z-index: -1;
+    }
+    #Learning{
+      background-color: hsl(47, 88%, 63%);
+      max-width: fit-content;
+      padding: 2% 3%;
+      border-radius: 6%;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 3% ;
+    }
+    .first-img{
+      border-radius: 5%;
+    }
+    #foundations{
+      font-size: 22px;
+      transition: 0.3s;
+    }
+    #foundations:hover{
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+      text-shadow: 3px 3px 3px 3px black;
+      transition: 0.3s;
+    }
+    p{
+      font-size: 16px;
+    }
+    .end{
+      display: flex;
+      flex-direction: row;
+      gap: 3%;
+      justify-content: center;
+      padding-bottom: 0%;
+      margin-bottom: -4%;
+      margin-top: -2%;
+    }
+    .end img{
+      padding: 0%;
+      scale: 0.6;
+    }
+    .end p{
+      font-weight:900; 
+    }
+    #about{
+      font-weight: lighter;
+      color: lightslategray;
+      padding-right: 2%;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="card">
+      <img src="assets\images\illustration-article.svg" alt="no image" class="first-img">
+      <h5 id="Learning">Learning</h5>
+      <p>Published 21 Dec 2023</p>
+      <h1 id="foundations">HTML & CSS foundations</h1>
+      <p id="about">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="end">
+        <img src="assets\images\image-avatar.webp" alt="" class="profile">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+    <div class="shadow">
+      <img src="assets\images\illustration-article.svg" alt="no image" class="first-img">
+      <h5 id="Learning">Learning</h5>
+      <p>Published 21 Dec 2023</p>
+      <h1 id="foundations">HTML & CSS foundations</h1>
+      <p id="about">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="end">
+        <img src="assets\images\image-avatar.webp" alt="" class="profile">
+        <p>Greg Hooper</p>
+    </div>
+  </div>
+</body>
+</html>
