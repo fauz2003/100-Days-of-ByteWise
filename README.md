@@ -15,8 +15,8 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 | Week Number | Task Number | Task Description                             | Completion Status |
 |-------------|-------------|----------------------------------------------|-------------------|
 |1            | 1           | Basics of HTML                               | Done              |
-|1            | 2           | CSS Basics and best styling practices        | Done              |
-|1            | 3           | CSS Properties                               | Done              |
+|             | 2           | CSS Basics and best styling practices        | Done              |
+|             | 3           | CSS Properties                               | Done              |
 |1            | 4           | Git and GitHub Basics                        | Done              |
 |2            | 1           | Mastering CSS Grid and Flexbox               | Done              |
 |2            | 2           | Creating a responsive website                | Done              |
