@@ -21,4 +21,6 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |2            | 1           | Mastering CSS Grid and Flexbox               | Done              |
 |             | 2           | Creating a responsive website                | Done              |
 |             | 3           | Practice Challenge                           | Done              |
+|3            | 1           | Learn SASS                                   | Done              |
+|             | 2           | Learn Tailwind CSS                           | In Progress       |
 
