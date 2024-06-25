@@ -1,0 +1,10 @@
+@mixin flexD($direction, $alignI:true, $justifyC:true){
+    display: flex;
+    flex-direction: $direction;
+    @if $alignI{
+        align-items: center;
+    }
+    @if $justifyC{
+        justify-content: center;
+    }
+}

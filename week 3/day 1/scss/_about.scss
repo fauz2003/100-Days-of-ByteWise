@@ -1,0 +1,19 @@
+#about{
+    @include flexD(column, true, true);
+    gap: 20px;
+    background-color: $secondary-color;
+    width: 100%;
+    color: $text-color;
+
+    p{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 10%;
+        margin-right: 10%;
+        line-height: normal;
+        user-select: none;
+    }
+}
+

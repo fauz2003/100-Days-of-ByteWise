@@ -1,0 +1,39 @@
+#contact{
+    @include flexD(column, true, false);
+    gap: 20px;
+    background-color: $secondary-color;
+    width: 100%;
+    color: $text-color;
+    padding-bottom: 50px;
+    margin-bottom: -20%;
+
+    h2{
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    label{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.entries{
+    @include flexD(column, false, false);
+    gap: 30px;
+
+    button{
+        max-width: 100px;
+        align-self:self-end;
+    }
+}
+.entry{
+    @include flexD(row, false, false);
+    justify-content: left;
+    gap: 20px;
+}
+
+

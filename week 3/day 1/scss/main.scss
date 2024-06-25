@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./functions";
+@import "./navbar";
+@import "./about";
+@import "./contact";
+@import "./home";
+@import "./projects";
+@import "./skills";
+
+body{
+    background:$primary-color;
+    @include flexD(column, true, false);
+    gap: 100px;
+    margin-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+

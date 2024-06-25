@@ -1,0 +1,24 @@
+#projects {
+    @include flexD(column, true, false);
+    color:#fff;
+    text-shadow:
+        -1px -1px 0 rgb(26, 116, 146),
+        1px -1px 0 rgb(26, 116, 146),
+        -1px 1px 0 rgb(26, 116, 146),
+        1px 1px 0 rgb(26, 116, 146);
+    
+    h2{
+        font-size: 60px;
+    }
+
+    ul{
+        @extend .skills_ul;
+    }
+
+    li:hover{
+        color: blueviolet;
+        transition: 0.3s;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}

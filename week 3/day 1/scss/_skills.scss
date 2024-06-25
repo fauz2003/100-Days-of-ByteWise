@@ -1,0 +1,24 @@
+#skills{
+    @include flexD(column, true, true);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+
+.skills_ul{
+    @include flexD(row, false, true);
+    gap: 80px;
+    list-style-type: none;
+    font-size: 28px;
+    font-weight: 600;
+    border: 4px solid ;
+    border-radius: 10%;
+    padding: 30px 40px;
+
+    li:hover{
+        color: blueviolet;
+        transition: 0.3s;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
