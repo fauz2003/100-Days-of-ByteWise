@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tailwind Practice Task</title>
+    <script>
+        function addNumbers(event) {
+            event.preventDefault(); // Prevent form submission
+            let fnum = document.getElementById("firstNumber").value;
+            let snum = document.getElementById("secondNumber").value;
+            let sum = parseFloat(fnum) + parseFloat(snum);
+            document.getElementById("resultLabel").textContent = `Result: ${sum}`;
+        }
+    </script>
+</head>
+<body class="bg-slate-300 flex-col justify-center text-center">
+    <div class=" bg-slate-500 py-3">
+        <h1 class="text-gray-100 font-bold text-lg">Tailwind Practice Task</h1>
+    </div>
+    <div class="bg-slate-50 py-10 text-center flex flex-col gap-10">
+        <div class="justify-center text-center mx-auto">
+            <form class="text-sm flex-col space-y-6 justify-center text-right" onsubmit="addNumbers(event)">
+                <div>
+                    <label>Enter first number :</label>
+                    <input type="number" name="firstNumber" id="firstNumber" class="border-2 border-gray-300 rounded-md p-1 m-1">
+                </div>
+                <div>
+                    <label>Enter Second number :</label>
+                    <input type="number" name="secondNumber" id="secondNumber" class="border-2 border-gray-300 rounded-md p-1 m-1">
+                </div>
+                <div>
+                    <button type="submit" class="bg-slate-500 text-gray-100 p-1 rounded text-left hover:bg-slate-400 hover:scale-110 hover:transition">Add</button>
+                </div>
+                <div>
+                    <label  id="resultLabel" class="text-left"></label>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
