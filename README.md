@@ -23,5 +23,5 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |             | 3           | Practice Challenge                           | Done              |
 |3            | 1           | Learn SASS                                   | Done              |
 |             | 2           | Learn Tailwind CSS                           | Done              |
-|             | 3           | Tailwind CSS + Responsive                    | In Progress       |
+|             | 3           | Tailwind CSS + Responsive                    | Done              |
 
