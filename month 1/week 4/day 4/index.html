@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <s><link rel="stylesheet" href="./style.css"></s>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Color Flipper</h1>
+            <div class="options">
+                <button class="btn" id="simple" onclick="toggleColorMode(event)">Simple</button>
+                <button class="btn" id="hex" onclick="toggleColorMode(event)">Hex</button>
+            </div>
+        </div>
+        <div class="colorChange">
+            <h2>Background Color: <span id="color">#FFFFFF</span></h2>
+            <button class="btn" id="btn" onclick="change_color()">Click Me</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
