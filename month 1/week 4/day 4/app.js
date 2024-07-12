@@ -28,11 +28,13 @@ function change_color() {
 
 function toggleColorMode(e){
     let elementId = e.target.id;
-
+    const opt = document.getElementById("optionName");
     if(elementId == "simple"){
         isSimpleMode = true;
+        opt.innerText = "Simple Mode";
     }
     else{
         isSimpleMode = false;
+        opt.innerText = "Hex Mode";
     }
 }
