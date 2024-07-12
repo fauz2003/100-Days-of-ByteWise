@@ -1,0 +1,95 @@
+.heading{
+    background-color: cornflowerblue;
+    margin: 0%;
+    width: 97vw;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#add{
+    background-color: orange;
+    padding: 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+}
+#add:hover{
+color: orangered;
+background-color: white;
+border: 1px solid orangered;
+cursor: pointer;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to bottom, orange 10%, cornflowerblue);
+    height: 100vh;
+    width: 98vw;
+    margin: 0px;
+}
+.task_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    padding:5px 20px 5px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#list{
+   margin-top: 5%;
+}
+.remove_task{
+    cursor: pointer;
+    color: orange;
+    transition: 0.5s;
+}
+.remove_task:hover{
+    transform: scale(1.2);
+}
+#removeAll{
+    width: 15%;
+    align-self: center;
+    font-size: medium;
+    border: 1px solid orange;
+    border-radius: 8px;
+    color: orange;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+#removeAll:hover{
+    transform: scale(1.1);
+}
+.task_ID{
+    color: orange;
+     /* display: none;  */
+    display: block;
+}
+.task_ID_hidden{
+    display: none;
+}
