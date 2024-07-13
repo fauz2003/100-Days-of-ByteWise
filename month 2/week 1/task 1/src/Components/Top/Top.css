@@ -1,0 +1,11 @@
+.TopContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 10px;
+}
+.top{
+    color: white;
+}

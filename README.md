@@ -29,7 +29,7 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |             | 3           | Learn Asynchronous JavaScript                | Pending           |
 |             | 4           | Learn JavaScript Functions                   | Done              |
 |             | 5           | Build a ToDo-JS App                          | Done              |
-|5            | 1           | Fundamentals of React.js                     | Pending           |
+|5            | 1           | Fundamentals of React.js                     | Done              |
 |             | 2           | Learn Node.js                                | Pending           |
 
 
