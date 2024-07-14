@@ -1,0 +1,29 @@
+.cardContainer{
+    background-color: rgba(17, 17, 30, 0.744);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 150px 50px 100px 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#adviceNo{
+    font-size: large;
+    color: darkolivegreen;
+}
+.border{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: white;
+    align-self:center;
+}
+.advice{
+    text-align: center;
+}

@@ -26,10 +26,11 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |             | 3           | Project (Tailwind CSS + Responsive)          | Done              |
 |4            | 1           | Learn JavaScript Fundamentals                | Done              |
 |             | 2           | Learn DOM Manipulation                       | Done              |
-|             | 3           | Learn Asynchronous JavaScript                | Pending           |
+|             | 3           | Learn Asynchronous JavaScript                | Done              |
 |             | 4           | Learn JavaScript Functions                   | Done              |
 |             | 5           | Build a ToDo-JS App                          | Done              |
 |5            | 1           | Fundamentals of React.js                     | Done              |
-|             | 2           | Learn Node.js                                | Pending           |
+|             | 2           | Learn Node.js                                | Done              |
+|             | 3           | Practice Project                             | Done              |
 
 

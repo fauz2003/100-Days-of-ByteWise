@@ -1,0 +1,31 @@
+.buttonContainer{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: -60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkolivegreen;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 40%;
+    margin-right: 40%;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(9, 9, 17, 0.89);
+    scale: 0.9;
+}
+.buttonContainer:hover{
+    background-color: darkolivegreen;
+    color: white;
+    transition: 0.3s;
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+.adviceButton{
+    align-self: center;
+    justify-self: center;
+    font-size: larger;
+}
