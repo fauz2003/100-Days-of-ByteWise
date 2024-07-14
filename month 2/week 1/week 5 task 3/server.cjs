@@ -1,9 +1,15 @@
 const http = require('http');
 const https = require('https');
+const cors = require('cors');
 
 const PORT = 5000;
 
 const requestListener = (req, res) => {
+  // Enable CORS for all origins in a basic manner
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
   if (req.url === '/api/advice' && req.method === 'GET') {
     https.get('https://api.adviceslip.com/advice', (apiRes) => {
       let data = '';

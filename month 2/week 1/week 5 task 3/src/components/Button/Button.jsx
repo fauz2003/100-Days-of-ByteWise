@@ -16,8 +16,8 @@ const Button = ({ incrementCount }) => {
   };
 
   return (
-    <div className='buttonContainer'>
-      <h3 className="adviceButton" onClick={changeAdvice}>
+    <div className='buttonContainer' onClick={changeAdvice}>
+      <h3 className="adviceButton" >
         Advise Me
       </h3>
     </div>

@@ -16,6 +16,7 @@
     cursor: pointer;
     border: 1px solid rgba(9, 9, 17, 0.89);
     scale: 0.9;
+    min-width: max-content;
 }
 .buttonContainer:hover{
     background-color: darkolivegreen;
