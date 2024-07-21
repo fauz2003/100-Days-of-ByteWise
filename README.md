@@ -34,5 +34,6 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |             | 3           | Practice Project                                | Done              |
 |6            | 1           | Learn Express                                   | Done              |
 |             | 2           | MongoDB Connection & Interacting with REST API  | Done              |
+|             | 3           | Build a Goal App using the MERN Stack           | Done              |
 
 
