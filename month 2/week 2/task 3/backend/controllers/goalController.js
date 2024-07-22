@@ -1,5 +1,6 @@
 const asyncHandler = require('express-async-handler');
 const Goal = require('../models/goalModel');
+const { text } = require('express');
 
 //CRUD OPERATIONS
 const getGoal = asyncHandler(async (req, res) =>{
@@ -18,7 +19,7 @@ const postGoal = asyncHandler(async(req, res) =>{
     const goal = await Goal.create({
         text:req.body.text
     })
-
+    
     res.json(goal);
 })
 

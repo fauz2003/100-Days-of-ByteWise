@@ -8,13 +8,15 @@ const registerUser = asyncHandler(async(req, res)=>{
 
     const {name, email, password} = req.body;
     const hashPass = await bcrypt.hash(password, 10);
+    const passwordPattern = /^(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
 
-    if (!name || !email || !password){
+    if (!passwordPattern.test(password)) {
         res.status(400);
-        throw new Error("PLease fill all fields");
+        throw new Error("Password must be at least 8 characters long and contain at least one number and one special character");
     }
 
     const Existuser = await User.findOne({email});
+    
     if (Existuser){
         res.status(400);
         throw new Error("User already exists");
