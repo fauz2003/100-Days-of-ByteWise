@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
 const goalSchema = mongoose.Schema({
-    email:{
-        type: String,
-        required:true
-    },
     text:{
         type:String, 
         required:true

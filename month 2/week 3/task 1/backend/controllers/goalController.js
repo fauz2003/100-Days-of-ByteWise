@@ -1,15 +1,9 @@
 const asyncHandler = require('express-async-handler');
 const Goal = require('../models/goalModel');
-const { text } = require('express');
 
-//CRUD OPERATIONS
 const getGoal = asyncHandler(async (req, res) =>{
 
-    const getGoals = asyncHandler(async (req, res) => {
-        const goals = await Goal.find({ email: req.user.email });
-        console.log(goals);
-        res.status(200).json(goals);
-      });
+    const goal = await Goal.find();
     
     res.json(goal);
 })
@@ -23,7 +17,7 @@ const postGoal = asyncHandler(async(req, res) =>{
     const goal = await Goal.create({
         text:req.body.text
     })
-    
+
     res.json(goal);
 })
 
