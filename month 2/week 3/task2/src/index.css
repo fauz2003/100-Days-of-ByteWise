@@ -24,3 +24,10 @@ button:hover{
     background-color: rgb(69, 53, 53, 0.8);
     transform: scale(1.1);
 }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
