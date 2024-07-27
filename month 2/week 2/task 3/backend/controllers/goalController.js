@@ -1,18 +1,21 @@
 const asyncHandler = require('express-async-handler');
 const Goal = require('../models/goalModel');
-const { text } = require('express');
+const express = require('express');
 
 //CRUD OPERATIONS
-const getGoal = asyncHandler(async (req, res) =>{
 
-    const getGoals = asyncHandler(async (req, res) => {
-        const goals = await Goal.find({ email: req.user.email });
-        console.log(goals);
-        res.status(200).json(goals);
-      });
+const getGoal = asyncHandler(async (req, res) => {
+    if (!req.query.email) {
+        res.status(400);
+        throw new Error("Email not provided");
+    }
+
+    const email = req.query.email;
+
+    const goals = await Goal.find({ email: email });
     
-    res.json(goal);
-})
+    res.status(200).json(goals);
+});
 
 const postGoal = asyncHandler(async(req, res) =>{
     if(!req.body.text){
@@ -21,7 +24,8 @@ const postGoal = asyncHandler(async(req, res) =>{
     }
 
     const goal = await Goal.create({
-        text:req.body.text
+        text:req.body.text,
+        email:req.body.email
     })
     
     res.json(goal);
