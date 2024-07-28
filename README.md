@@ -37,5 +37,6 @@ During my fellowship, I've had the opportunity to work on various projects, lear
 |             | 3           | Build a Goal App using the MERN Stack           | Done              |
 |7            | 1           | JWT Authentication                              | Done              |
 |             | 2           | Learn Redux Toolkit                             | Done              |
+|             | 3           | React State Management (Explore Options)        | Done              |
 
 
