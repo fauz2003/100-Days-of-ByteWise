@@ -16,15 +16,13 @@ const UserProvider = ({children}) =>{
         try {
             
             const {data} = await axios.post('http://localhost:5000/api/users/login', {email, password});
-            
-            
-            toast.success('Logged in successfully');
             localStorage.clear();  
             localStorage.setItem("token", data.token);
             navigate("/");
+            toast.success('Logged in successfully');
             setBtn(false);
         } catch (error) {
-            //toast.error(error.response.data.message);
+            toast.error(error.response.data.message);
         }
     }
     
