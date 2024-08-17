@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Sidebar from '../Components/Sidebar';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Header from '../Components/Header';
@@ -16,6 +16,21 @@ const Home = () => {
 
   const { fetchResponse, messages, prompt, setPrompt, newRequestLoading } = ChatData();
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    fetchResponse();
+  }
+
+  const messageContainerRef = useRef();
+
+  useEffect(()=>{
+    if(messageContainerRef.current){
+      messageContainerRef.current.scrollTo({
+        top:messageContainerRef.current.scrollHeight,
+        behavior: "smooth",
+      })}
+  }, [messages]);
+
   return (
     <div className='flex h-screen bg-gray-900 text-white'>
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
@@ -28,18 +43,18 @@ const Home = () => {
         <div className='flex-1 p-6 mb-20 md:mb-0'>
           <Header />
 
-          <div className='flex-1 p-6 max-h-[600px] overflow-y-auto mb-20 md:mb-0 thin-scrollbar'>
+          <div className='flex-1 p-6 max-h-[600px] overflow-y-auto mb-20 md:mb-0 thin-scrollbar' ref={messageContainerRef}>
             {messages && messages.length > 0 ? (
               messages.map((e, i) => (
                 <div key={i}>
-                  <div className='mb-4 p-4 rounded bg-blue-700 text-white'>
+                  <div className='mb-4 p-4 rounded bg-blue-700 text-white flex gap-14'>
                     <div className='bg-white p-2 rounded-full text-black text-2xl h-10'>
                       <CgProfile />
                     </div>
                     {e.question}
                   </div>
 
-                  <div className='mb-4 p-4 rounded bg-gray-700 text-white'>
+                  <div className='mb-4 p-4 rounded bg-gray-700 text-white flex gap-1'>
                     <div className='bg-white p-2 rounded-full text-black text-2xl h-10'>
                       <FaRobot />
                     </div>
@@ -55,7 +70,7 @@ const Home = () => {
       </div>
 
       <div className='fixed bottom-0 right-0 left-auto p-4 bg-gray-900 w-full md:w-[75%]'>
-        <form className='flex justify-center text-center'>
+        <form onSubmit={submitHandler} className='flex justify-center text-center'>
           <input
             className='flex-grow p-4 rounded-l bg-gray-700 text-white outline-none'
             type="text"

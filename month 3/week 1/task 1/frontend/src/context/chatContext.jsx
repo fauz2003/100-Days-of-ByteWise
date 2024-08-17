@@ -1,4 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const ChatContext = createContext();
 
@@ -39,7 +41,36 @@ export const ChatProvider = ({children}) =>{
         }
     }
 
-    return <ChatContext.Provider value={{fetchResponse, messages, prompt, setPrompt, newRequestLoading}}>{children}</ChatContext.Provider>
+    const [chats, setChats] = useState([]);
+    async function fetchChats(){
+        try {
+            const {data} = axios.get('http://localhost:5000/api/chat/all');
+
+            setChats(data);
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const [createLod, setCreateLod] = useState(false);
+
+    async function createChat(){
+        setCreateLod(true);
+
+        try {
+            const data = await axios.post("http://localhost:5000/api/chat/new");
+
+            fetchChats();
+            setCreateLod(false);
+        } catch (error) {
+            toast.error("Something went wrong");
+        }
+    }
+    useEffect(()=>{
+       fetchChats() 
+    }, []);
+
+    return <ChatContext.Provider value={{fetchResponse, messages, prompt, setPrompt, newRequestLoading, setChats, createChat, createLod}}>{children}</ChatContext.Provider>
 };
 
 export const ChatData = () => useContext(ChatContext);

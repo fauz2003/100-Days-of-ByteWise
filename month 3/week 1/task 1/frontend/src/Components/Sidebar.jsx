@@ -1,7 +1,12 @@
 import React from 'react'
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { ChatData } from '../context/chatContext';
+import { MdDelete } from "react-icons/md";
 
 const Sidebar = ({isOpen, toggleSidebar}) => {
+
+    const {chats, createChat, createLod} = ChatData();
+
   return (
     <div className={`fixed inset-0 bg-gray-800 p-4 transition-transform transform md:relative md:translate-x-0 md:w-1/4 md:block ${isOpen? "translate-x-0":"-translate-x-full "}`}>
 
@@ -12,14 +17,26 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
 <div className='text-2xl font-semibold mb-6'>Chatbot</div>
 
 <div className='mb-4'>
-    <button className='w-full py-2 bg-gray-700 hover:bg-gray-600 rounded'>New Chat +</button>
+    <button onClick={createChat} className='w-full py-2 bg-gray-700 hover:bg-gray-600 rounded'>New Chat +</button>
 </div>
 
 <div>
     <p className='text-sm text-gray-400 mb-2'>Recent</p>
 
     <div className='max-h-[500px] overflow-y-auto thin-scrollbar mb-20 md:mb-0'>
-        <button className='w-full text-left py-2 px-2 bg-gray-700 hover:bg-gray-600 rounded mt-2 flex justify-center items-center'>Hello how are you</button>
+        {
+            chats && chats.length > 0 ? 
+            (chats.map((e)=>{
+                <button key={e._id} className='w-full text-left py-2 px-2 bg-gray-700 hover:bg-gray-600 rounded mt-2 flex justify-center items-center'>
+                    <span>{e.latestMessage.slice(0,38)}...</span>
+                    <button className='bg-red-600 text-white text-xl px-3 py-2 rounded-md'><MdDelete /></button>
+                </button>
+            }))
+            :
+            (
+                <p>No chats yet</p>
+            )
+        }
     </div>
 </div>
 

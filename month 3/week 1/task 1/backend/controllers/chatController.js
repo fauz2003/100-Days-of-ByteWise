@@ -2,6 +2,7 @@ const Conversation = require('../models/conversationModel');
 const Chat = require('../models/chatModel');
 
 const createChat = async (req, res) => {
+    
     try {
         const userId = req.user._id;
 
